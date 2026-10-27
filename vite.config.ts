@@ -3,8 +3,9 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  // GitHub Pages project site: https://sandeep-datta-research.github.io/serius/
-  base: '/serius/',
+  // Relative URLs keep assets working on the GitHub Pages project path,
+  // regardless of path casing or trailing-slash redirects.
+  base: './',
   plugins: [react(), tailwindcss()],
   build: {
     target: 'es2020',
