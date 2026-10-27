@@ -14,14 +14,10 @@ export default function FinalCTA({ onReplay }: { onReplay: () => void }) {
   const opacity = useTransform(scrollYProgress, [0.1, 0.9], [0, 1]);
 
   const ctas = [
-    { label: "Let's Build", href: `mailto:${profile.email}?subject=${encodeURIComponent("Let's build something")}`, primary: true, cursor: 'play' },
-    { label: 'LinkedIn', href: profile.links.linkedin, cursor: 'link' },
-    { label: 'GitHub', href: profile.links.github, cursor: 'link' },
+    { label: 'Read Clouded by You', href: profile.links.webnovel, primary: true, cursor: 'play' },
     { label: 'Instagram', href: profile.links.instagram, cursor: 'link' },
     { label: 'YouTube', href: profile.links.youtube, cursor: 'link' },
     { label: 'X', href: profile.links.x, cursor: 'link' },
-    { label: 'Clouded by You', href: profile.links.webnovel, cursor: 'link' },
-    { label: 'Email', href: `mailto:${profile.email}`, cursor: 'link' },
   ];
 
   return (
