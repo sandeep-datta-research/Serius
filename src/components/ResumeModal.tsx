@@ -25,13 +25,13 @@ export default function ResumeModal({ onClose }: { onClose: () => void }) {
       exit={{ opacity: 0 }}
       role="dialog"
       aria-modal="true"
-      aria-label="Resume"
+      aria-label="Creator profile"
     >
       <div className="gutter flex h-16 shrink-0 items-center justify-between gap-3 pt-[env(safe-area-inset-top)]">
         <p className="truncate font-display text-2xl tracking-wide text-bone">The Full Story</p>
         <div className="flex items-center gap-2">
           {profile.resumePdf && (
-            <a href={profile.resumePdf} download="Sandeep_Datta_Resume.pdf" className="rounded-md bg-bone px-4 py-2 text-xs font-bold text-ink">
+            <a href={profile.resumePdf} download="Seiua_Satou_Creator_Profile.pdf" className="rounded-md bg-bone px-4 py-2 text-xs font-bold text-ink">
               ⤓ Download
             </a>
           )}
@@ -55,7 +55,7 @@ export default function ResumeModal({ onClose }: { onClose: () => void }) {
               </a>
             </div>
           ) : (
-            <iframe title="Sandeep Datta resume (PDF)" src={`${profile.resumePdf}#view=FitH`} className="h-full w-full rounded-xl bg-white" />
+            <iframe title="Seiua Satou creator profile (PDF)" src={`${profile.resumePdf}#view=FitH`} className="h-full w-full rounded-xl bg-white" />
           )
         ) : (
           <div className="gutter flex flex-1 items-center justify-center pb-10">
