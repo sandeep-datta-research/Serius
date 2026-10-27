@@ -134,6 +134,23 @@ export const projects: Project[] = [
     motif: 'tenants',
   },
   {
+    id: 'echo',
+    title: 'Echo',
+    year: '2026',
+    genre: 'Web • Portfolio • Interactive Design',
+    logline: 'A monochrome editorial portfolio showcasing Sandeep Datta’s projects, creative work, and interests.',
+    stack: ['HTML', 'Tailwind CSS', 'JavaScript', 'Interactive UI'],
+    build: [
+      'An editorial-style portfolio with animated sections, featured projects, and responsive layouts.',
+      'Built as a companion project to the Serius / Stellan portfolio.',
+    ],
+    features: ['Editorial portfolio', 'Interactive project showcase', 'Responsive layout'],
+    metrics: [{ value: 'Live', label: 'portfolio status' }],
+    github: 'https://github.com/sandeep-datta-research/Echo',
+    palette: { from: '#101010', via: '#424242', to: '#050505', accent: '#f2f2f2' },
+    motif: 'flow',
+  },
+  {
     id: 'clouded-by-you',
     title: 'Clouded by You',
     year: 'Ongoing',
