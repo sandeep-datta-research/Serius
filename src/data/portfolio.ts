@@ -1,24 +1,24 @@
 /**
- * Central portfolio data for Sandeep Datta.
+ * Central public creator profile for Seiua Satou (@ifsato).
  * Achievement and credential cards marked DRAFT are temporary placeholders to verify before publishing.
  */
 
 export type Palette = { from: string; via: string; to: string; accent: string };
 
 export const profile = {
-  fullName: 'Sandeep Datta',
-  displayName: 'Sandeep Datta',
-  firstName: 'SANDEEP',
+  fullName: 'Seiua Satou',
+  displayName: 'Seiua Satou',
+  firstName: 'SEIUA',
   seriesTag: 'THE SERIES',
-  originalLabel: 'A SANDEEP ORIGINAL',
-  role: 'Student Developer, AI Builder & Creator',
-  tagline: ['Web Development', 'AI Projects', 'Writing & AMVs'],
+  originalLabel: 'AN IFSATO ORIGINAL',
+  role: 'Writer, Digital Creator & Anime Video Editor',
+  tagline: ['Creative Writing', 'Anime Edits', 'Digital Projects'],
   intro:
-    'I’m Sandeep Datta, a student developer and creator from India. I build and explore web experiences and AI projects, work on Luna AI under DeimosAI, create anime edits as Ifsato, and write Clouded by You. I’m learning by building and sharing the journey.',
-  location: 'India',
-  email: 'sandeepdatta866@gmail.com',
+    'I’m Seiua Satou, known online as @ifsato. I write Clouded by You, create anime music videos, and explore digital projects and web experiences. This is the home for my creative work and ongoing projects.',
+  location: '',
+  email: '',
   links: {
-    linkedin: 'https://www.linkedin.com/in/sandeep-datta-9293a63/',
+    
     github: 'https://github.com/sandeep-datta-research',
     instagram: 'https://www.instagram.com/ifsato/',
     youtube: 'https://www.youtube.com/@ifsato',
@@ -38,19 +38,19 @@ export const profile = {
 
 export const education = [
   {
-    school: 'Class 10',
-    place: 'India',
-    degree: 'Secondary school student',
-    period: 'Currently studying',
-    score: 'Details to be added',
+    school: 'Creative Work',
+    place: 'Online',
+    degree: 'Writing, anime edits, and digital projects',
+    period: 'Ongoing',
+    score: 'ifsato',
   },
 ];
 
 export const experience = [
   {
     company: 'Independent Projects',
-    role: 'Student Developer & Creator',
-    place: 'India',
+    role: 'Writer & Digital Creator',
+    place: 'Online',
     period: 'Ongoing',
     points: [
       'Building and experimenting with personal software projects while learning web development and AI tooling.',
@@ -138,7 +138,7 @@ export const projects: Project[] = [
     title: 'Echo',
     year: '2026',
     genre: 'Web • Portfolio • Interactive Design',
-    logline: 'A monochrome editorial portfolio showcasing Sandeep Datta’s projects, creative work, and interests.',
+    logline: 'A monochrome editorial portfolio showcasing Seiua Satou’s creative work and digital projects.',
     stack: ['HTML', 'Tailwind CSS', 'JavaScript', 'Interactive UI'],
     build: [
       'An editorial-style portfolio with animated sections, featured projects, and responsive layouts.',
@@ -404,7 +404,7 @@ export const introSlides = [
   },
 ];
 
-export type ProfileId = 'sandeep' | 'recruiter' | 'developer' | 'creative';
+export type ProfileId = 'seiua' | 'recruiter' | 'developer' | 'creative';
 export type SectionId = 'about' | 'journey' | 'originals' | 'picks' | 'skills' | 'moments' | 'story';
 
 export const viewerProfiles: {
@@ -415,8 +415,8 @@ export const viewerProfiles: {
   order: SectionId[];
 }[] = [
   {
-    id: 'sandeep',
-    name: 'Sandeep',
+    id: 'seiua',
+    name: 'Seiua',
     blurb: 'The full series, in order',
     color: '#e5132b',
     order: ['about', 'journey', 'originals', 'picks', 'skills', 'moments', 'story'],
@@ -445,7 +445,7 @@ export const viewerProfiles: {
 ];
 
 export const sectionMeta: Record<SectionId, { nav: string; card: string; meta: string; palette: Palette }> = {
-  about: { nav: 'About', card: 'About Me', meta: 'The Pilot • Education & training', palette: violet },
+  about: { nav: 'About', card: 'About Me', meta: 'The Pilot • Creative profile', palette: violet },
   journey: { nav: 'Journey', card: 'My Journey', meta: `${seasons.length} Seasons • ${seasons.reduce((n, s) => n + s.episodes.length, 0)} Episodes`, palette: amber },
   originals: { nav: 'Originals', card: 'My Projects', meta: `${projects.length} Originals • 2026`, palette: crimson },
   picks: { nav: 'Top Picks', card: 'Top Picks', meta: 'Top 10 from the resume', palette: jade },
