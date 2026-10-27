@@ -37,14 +37,14 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
   const glowX = useTransform(px, [-1, 1], ['-6%', '6%']);
 
   const meta = [
-    'Student Developer',
-    'Class 10 Student',
+    'Writer & Digital Creator',
+    '@ifsato',
     `${projects.length} Originals`,
     `${certifications.length} Certifications`,
   ];
 
   const floating = [
-    { text: 'Student Developer', sub: 'Learning by building', pos: 'left-[2%] top-[30%]', depth: 1 },
+    { text: 'Seiua Satou', sub: '@ifsato', pos: 'left-[2%] top-[30%]', depth: 1 },
     { text: `${achievements[0].title}`, sub: achievements[0].org, pos: 'right-[0%] top-[18%]', depth: -1 },
     { text: 'Web · AI · Linux', sub: 'Current interests', pos: 'right-[4%] bottom-[24%]', depth: 0.6 },
   ];
@@ -87,10 +87,10 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
           {/* rim light ring */}
           <div aria-hidden className="absolute bottom-[8%] left-1/2 h-[78%] w-[78%] -translate-x-1/2 rounded-full border border-crimson-2/20 shadow-[0_0_120px_rgba(229,19,43,0.35),inset_0_0_80px_rgba(229,19,43,0.18)]" />
           <img
-            key="sandeep-custom-portrait"
+            key="ifsato-custom-portrait"
             src="https://d2ol7oe51mr4n9.cloudfront.net/user_3Kr8rffkXEdhWNxgOlYJX8hBp94/d84f286b-4c2e-4850-96d7-dc2dc3b23856.jpg?v=20261027"
             sizes="(max-width: 1024px) 100vw, 54vw"
-            alt="Monochrome long-haired anime character portrait selected for Sandeep Datta’s Serius portfolio"
+            alt="Monochrome portrait selected for Seiua Satou’s @ifsato creator portfolio"
             className="absolute bottom-0 left-1/2 h-full w-auto max-w-none -translate-x-1/2 object-contain object-bottom drop-shadow-[0_30px_60px_rgba(0,0,0,0.6)] [mask-image:linear-gradient(to_bottom,black_62%,transparent_97%)]"
           />
           {/* crimson rim light on the image edge */}
