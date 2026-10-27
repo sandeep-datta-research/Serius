@@ -22,7 +22,7 @@ export default function ResumeSection({ onView }: { onView: () => void }) {
         <div className="lg:sticky lg:top-28 lg:self-start">
           <p className="font-serif text-3xl italic leading-tight text-bone">Every episode, on one page.</p>
           <p className="mt-3 text-sm leading-relaxed text-mist">
-            Education, training, projects, achievements and {certifications.length} certifications — view it here or take a copy with you.
+            Creative work, projects, highlights and ongoing experiments — explore the public creator profile.
           </p>
           <div className="mt-6 flex flex-col gap-3">
             <Magnetic className="w-full">
@@ -39,7 +39,7 @@ export default function ResumeSection({ onView }: { onView: () => void }) {
               <Magnetic className="w-full">
                 <a
                   href={profile.resumePdf}
-                  download="Sandeep_Datta_Resume.pdf"
+                  download="Seiua_Satou_Creator_Profile.pdf"
                   data-cursor="link"
                   className="glass flex min-h-12 w-full items-center justify-center gap-2 rounded-md px-6 text-[15px] font-semibold text-bone transition hover:bg-white/15"
                 >
@@ -54,7 +54,7 @@ export default function ResumeSection({ onView }: { onView: () => void }) {
           </div>
           <dl className="mt-8 grid grid-cols-3 gap-px overflow-hidden rounded-xl bg-white/10 text-center">
             {[
-              { v: 'Class 10', k: 'Education' },
+              { v: '@ifsato', k: 'Creator' },
               { v: String(projects.length), k: 'Originals' },
               { v: String(certifications.length), k: 'Certs' },
             ].map((s) => (
@@ -103,7 +103,7 @@ export function ResumeSheet() {
           <h3 className="mt-1 font-display text-[clamp(1.9rem,4.4vw,3.2rem)] leading-[0.9] tracking-wide text-bone">{profile.fullName}</h3>
         </div>
         <div className="text-xs leading-relaxed text-mist sm:text-right">
-          <a href={`mailto:${profile.email}`} className="block hover:text-bone">
+          <a href={`mailto:${profile.links.instagram}`} className="block hover:text-bone">
             {profile.email}
           </a>
           <a href={profile.links.linkedin} target="_blank" rel="noreferrer" className="hover:text-bone">
@@ -118,17 +118,17 @@ export function ResumeSheet() {
 
       <div className="grid gap-x-10 md:grid-cols-[1.4fr_1fr]">
         <div>
-          <H>Education</H>
+          <H>Creative Profile</H>
           {education.map((e) => (
             <div key={e.school} className="mb-4">
               <div className="flex flex-wrap justify-between gap-x-3">
                 <p className="text-sm font-semibold text-bone">
-                  {e.school}, {e.place}
+                  {e.school}
                 </p>
                 <p className="text-xs text-smoke">{e.period}</p>
               </div>
               <p className="text-xs text-mist">
-                {e.degree} · <span className="text-bone/80">{e.score}</span>
+                {e.degree} · <span className="text-bone/80">@ifsato</span>
               </p>
             </div>
           ))}
