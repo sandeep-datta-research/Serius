@@ -381,7 +381,7 @@ export const introSlides = [
   },
 ];
 
-export type ProfileId = 'sandeep' | 'recruiter' | 'developer' | 'creative'; 'sushmita' | 'recruiter' | 'developer' | 'creative';
+export type ProfileId = 'sandeep' | 'recruiter' | 'developer' | 'creative';
 export type SectionId = 'about' | 'journey' | 'originals' | 'picks' | 'skills' | 'moments' | 'story';
 
 export const viewerProfiles: {
