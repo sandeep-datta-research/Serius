@@ -103,15 +103,15 @@ export function ResumeSheet() {
           <h3 className="mt-1 font-display text-[clamp(1.9rem,4.4vw,3.2rem)] leading-[0.9] tracking-wide text-bone">{profile.fullName}</h3>
         </div>
         <div className="text-xs leading-relaxed text-mist sm:text-right">
-          <a href={`mailto:${profile.links.instagram}`} className="block hover:text-bone">
-            {profile.email}
+          <a href={profile.links.instagram} target="_blank" rel="noreferrer" className="block hover:text-bone">
+            Instagram ↗
           </a>
-          <a href={profile.links.linkedin} target="_blank" rel="noreferrer" className="hover:text-bone">
-            LinkedIn ↗
+          <a href={profile.links.youtube} target="_blank" rel="noreferrer" className="hover:text-bone">
+            YouTube ↗
           </a>
           {' · '}
-          <a href={profile.links.github} target="_blank" rel="noreferrer" className="hover:text-bone">
-            GitHub ↗
+          <a href={profile.links.webnovel} target="_blank" rel="noreferrer" className="hover:text-bone">
+            Webnovel ↗
           </a>
         </div>
       </header>
