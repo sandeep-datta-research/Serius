@@ -23,8 +23,8 @@ export const profile = {
   },
   resumePdf: '',
   portrait: {
-    src: '/assets/portrait-720.webp',
-    srcSet: '/assets/portrait-420.webp 420w, /assets/portrait-720.webp 720w, /assets/portrait-1100.webp 1100w',
+    src: '',
+    srcSet: '',
     alt: 'Portrait placeholder — replace with Sandeep’s photo',
   },
   interests: ['AI & Web Development', 'Linux', 'Writing & Video Editing'],
