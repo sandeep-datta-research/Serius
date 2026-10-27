@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  // Keep generated JS/CSS paths valid on GitHub Pages project URLs as well as custom domains.
-  base: './',
+  // GitHub Pages project site: https://sandeep-datta-research.github.io/serius/
+  base: '/serius/',
   plugins: [react(), tailwindcss()],
   build: {
     target: 'es2020',
