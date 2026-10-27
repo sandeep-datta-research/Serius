@@ -27,7 +27,7 @@ export default function About() {
             <div className="absolute inset-0 opacity-50 [background-image:repeating-linear-gradient(90deg,rgba(255,255,255,0.03)_0px,rgba(255,255,255,0.03)_1px,transparent_1px,transparent_28px)]" />
             {profile.portrait.src && (
           <img
-              src="/assets/portrait-720.webp"
+              src="https://d2ol7oe51mr4n9.cloudfront.net/user_3Kr8rffkXEdhWNxgOlYJX8hBp94/d84f286b-4c2e-4850-96d7-dc2dc3b23856.jpg?v=20261027"
               srcSet={profile.portrait.srcSet}
               sizes="(max-width: 1024px) 90vw, 40vw"
               alt={profile.portrait.alt}
