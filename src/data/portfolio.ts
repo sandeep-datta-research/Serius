@@ -29,9 +29,9 @@ export const profile = {
   },
   resumePdf: '',
   portrait: {
-    src: '',
+    src: 'https://d2ol7oe51mr4n9.cloudfront.net/user_3Kr8rffkXEdhWNxgOlYJX8hBp94/d84f286b-4c2e-4850-96d7-dc2dc3b23856.jpg',
     srcSet: '',
-    alt: 'Portrait of Sandeep Datta',
+    alt: 'Monochrome long-haired anime character portrait in Serius’s crimson cinematic style',
   },
   interests: ['AI & Web Development', 'Linux & Developer Tools', 'Writing & Anime Video Editing'],
 };
