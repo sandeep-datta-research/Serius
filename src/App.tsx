@@ -26,7 +26,7 @@ const ResumeModal = lazy(() => import('./components/ResumeModal'));
 
 type Stage = 'opening' | 'profiles' | 'home';
 
-const STORAGE_KEY = 'sandeep-series-profile';
+const STORAGE_KEY = 'ifsato-series-profile';
 
 function readStoredProfile(): ProfileId | null {
   try {
@@ -48,7 +48,7 @@ export default function App() {
 function Series() {
   const stored = readStoredProfile();
   const [stage, setStage] = useState<Stage>(stored ? 'home' : 'opening');
-  const [profileId, setProfileId] = useState<ProfileId>(stored ?? 'sandeep');
+  const [profileId, setProfileId] = useState<ProfileId>(stored ?? 'seiua');
   const [playing, setPlaying] = useState(false);
   const [project, setProject] = useState<Project | null>(null);
   const [resumeOpen, setResumeOpen] = useState(false);
