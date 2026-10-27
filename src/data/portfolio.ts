@@ -354,7 +354,34 @@ export const topPicks: TopPick[] = [
   { label: 'Next Chapter', title: 'More Projects', detail: 'Verified milestones to be added', palette: crimson },
 ];
 
-export type ProfileId = 'sushmita' | 'recruiter' | 'developer' | 'creative';
+export const introSlides = [
+  {
+    kicker: 'The Builder',
+    title: 'IDEAS INTO PROJECTS',
+    lines: ['Learning by building and experimenting.', 'Exploring web development and AI tools.'],
+    chips: ['Luna AI', 'DeimosAI', 'Stellan'],
+  },
+  {
+    kicker: 'The Creator',
+    title: 'STORIES & SCENES',
+    lines: ['Writing Clouded by You.', 'Creating anime edits under Ifsato.'],
+    chips: ['Writing', 'AMV', 'Storytelling'],
+  },
+  {
+    kicker: 'The Explorer',
+    title: 'ALWAYS LEARNING',
+    lines: ['Exploring Linux and developer workflows.', 'Building skills one project at a time.'],
+    chips: ['Linux', 'GitHub', 'AI'],
+  },
+  {
+    kicker: 'Next Chapter',
+    title: 'MORE TO COME',
+    lines: ['Projects and verified achievements will be added as they grow.'],
+    chips: ['In progress'],
+  },
+];
+
+export type ProfileId = 'sandeep' | 'recruiter' | 'developer' | 'creative'; 'sushmita' | 'recruiter' | 'developer' | 'creative';
 export type SectionId = 'about' | 'journey' | 'originals' | 'picks' | 'skills' | 'moments' | 'story';
 
 export const viewerProfiles: {
