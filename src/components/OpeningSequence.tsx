@@ -87,7 +87,8 @@ export default function OpeningSequence({ onDone }: { onDone: () => void }) {
         animate={beat >= 4 ? { opacity: 1, scale: 1, filter: 'blur(0px) brightness(1)' } : {}}
         transition={{ duration: 1.6, ease: EASE }}
       >
-        <img
+        {profile.portrait.src && (
+          <img
           src={profile.portrait.src}
           srcSet={profile.portrait.srcSet}
           sizes="(max-width: 768px) 100vw, 900px"
@@ -95,6 +96,7 @@ export default function OpeningSequence({ onDone }: { onDone: () => void }) {
           className="h-full w-auto max-w-none object-contain object-bottom [mask-image:linear-gradient(to_bottom,black_55%,transparent_98%)]"
 
         />
+        )}
       </motion.div>
       <div aria-hidden className="absolute inset-0 z-[1] bg-[radial-gradient(70%_60%_at_50%_40%,transparent_30%,rgba(0,0,0,0.85)_100%)]" />
 
